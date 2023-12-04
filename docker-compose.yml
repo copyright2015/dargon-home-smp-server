@@ -18,7 +18,7 @@ services:
 
       - VERSION=1.19.2
       - TYPE=fabric
-      - PACKWIZ_URL=https://sub.nyamura.me/modpack/packwiz/pack.toml
+      - PACKWIZ_URL=http://localhost:8080/pack.toml
       - MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES=false
       - MODRINTH_ALLOWED_VERSION_TYPE=beta
       - MODRINTH_PROJECTS=gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
@@ -32,7 +32,7 @@ services:
       #- ONLINE_MODE=false
       - SYNC_CHUNK_WRITES=false
       - ENABLE_COMMAND_BLOCKS=true
-      - "MOTD=\\u00A7d\\u00A7lNyamura Sub Server\\u00A7r\\n     \\u00A7eSeason 2"
+      - "MOTD=\\u00a7c\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591\\u2591\\u00a7b Dragon Home\\u00a7e \\u2591\\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593\\n\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591 cozy tech magic \\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593"
       - DIFFICULTY=normal
       - SPAWN_PROTECTION=0
       #- ENABLE_WHITELIST=true
