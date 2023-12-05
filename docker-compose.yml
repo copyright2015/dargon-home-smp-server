@@ -18,7 +18,7 @@ services:
 
       - VERSION=1.19.2
       - TYPE=fabric
-      - PACKWIZ_URL=http://localhost:8080/pack.toml
+      - PACKWIZ_URL=http://localhost/packwiz/dragon-home-mod-pack/pack.toml
       - MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES=false
       - MODRINTH_ALLOWED_VERSION_TYPE=beta
       - MODRINTH_PROJECTS=gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
