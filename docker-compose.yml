@@ -22,7 +22,7 @@ services:
       - PACKWIZ_URL=http://172.17.0.1/packwiz/dragon-home-mod-pack/pack.toml
       - MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES=false
       - MODRINTH_ALLOWED_VERSION_TYPE=beta
-      - MODRINTH_PROJECTS=owo-lib,gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
+      - MODRINTH_PROJECTS=owo-lib,gotta-go-fast-fabric,dynmap,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
       - MODS_FILE=/extras/mods.txt
 
       - REPLACE_ENV_VARIABLE_PREFIX=MCCFG_
@@ -42,4 +42,5 @@ services:
     ports:
       - "25565:25565"
       - "24454:24454/udp" # SimpleVoiceChat
+      - "8123:8123" # Dynmap
 
