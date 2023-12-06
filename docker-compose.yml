@@ -3,7 +3,7 @@ services:
   minecraft:
     image: itzg/minecraft-server
     restart: unless-stopped
-    #mem_limit: 9G
+    #mem_limit: 10G
     volumes:
       - ./minecraft-sync/config:/config
       - ./minecraft-sync/mods:/mods
@@ -14,14 +14,15 @@ services:
       #- GID=1000
 
       - EULA=true
-      - MEMORY=4G
+      - MEMORY=13G
 
       - VERSION=1.19.2
       - TYPE=fabric
-      - PACKWIZ_URL=http://localhost/packwiz/dragon-home-mod-pack/pack.toml
+      - FABRIC_LOADER_VERSION=0.14.24
+      - PACKWIZ_URL=http://172.17.0.1/packwiz/dragon-home-mod-pack/pack.toml
       - MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES=false
       - MODRINTH_ALLOWED_VERSION_TYPE=beta
-      - MODRINTH_PROJECTS=gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
+      - MODRINTH_PROJECTS=owo-lib,gotta-go-fast-fabric,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
       - MODS_FILE=/extras/mods.txt
 
       - REPLACE_ENV_VARIABLE_PREFIX=MCCFG_
@@ -32,7 +33,7 @@ services:
       - ONLINE_MODE=false
       - SYNC_CHUNK_WRITES=false
       - ENABLE_COMMAND_BLOCKS=true
-      - "MOTD=\\u00a7c\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591\\u2591\\u00a7b Dragon Home\\u00a7e \\u2591\\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593\\n\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591 cozy tech magic \\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593"
+      - "MOTD=\\u00a7c\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591\\u2591\\u00a7b Dragon Home\\u00a7e \\u2591\\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593\n\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591 cozy tech magic \\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593"
       - DIFFICULTY=normal
       - SPAWN_PROTECTION=0
       #- ENABLE_WHITELIST=true
