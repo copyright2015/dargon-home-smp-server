@@ -14,7 +14,7 @@ services:
       #- GID=1000
 
       - EULA=true
-      - MEMORY=13G
+      - MEMORY=11G
 
       - VERSION=1.19.2
       - TYPE=fabric
@@ -22,7 +22,7 @@ services:
       - PACKWIZ_URL=http://172.17.0.1/packwiz/dragon-home-mod-pack/pack.toml
       - MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES=false
       - MODRINTH_ALLOWED_VERSION_TYPE=beta
-      - MODRINTH_PROJECTS=owo-lib,gotta-go-fast-fabric,dynmap,chunky,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
+      - MODRINTH_PROJECTS=fastload,c2me-fabric,gotta-go-fast-fabric,chunky,dynmap,vanish,styled-chat,styledplayerlist,styled-nicknames,spark,banhammer,luckperms,ledger,invview,essential-commands,easyauth
       - MODS_FILE=/extras/mods.txt
 
       - REPLACE_ENV_VARIABLE_PREFIX=MCCFG_
@@ -36,6 +36,7 @@ services:
       - "MOTD=\\u00a7c\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591\\u2591\\u00a7b Dragon Home\\u00a7e \\u2591\\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593\n\\u2593\\u2593\\u00a76\\u2592\\u2592\\u00a7e\\u2591 cozy tech magic \\u2591\\u00a76\\u2592\\u2592\\u00a7c\\u2593\\u2593"
       - DIFFICULTY=normal
       - SPAWN_PROTECTION=0
+      - ALLOW-FLIGHT=true
       #- ENABLE_WHITELIST=true
       #- "SEED=0"
 
